@@ -67579,6 +67579,23 @@ exports.installLint = installLint;
 
 /***/ }),
 
+/***/ 3886:
+/***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const process_1 = __importDefault(__nccwpck_require__(7282));
+const run_1 = __nccwpck_require__(7764);
+process_1.default.on("uncaughtException", (e) => console.warn(e.message));
+(0, run_1.postRun)();
+
+
+/***/ }),
+
 /***/ 7764:
 /***/ (function(__unused_webpack_module, exports, __nccwpck_require__) {
 
@@ -68136,6 +68153,14 @@ module.exports = require("path");
 
 /***/ }),
 
+/***/ 7282:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("process");
+
+/***/ }),
+
 /***/ 5477:
 /***/ ((module) => {
 
@@ -68262,18 +68287,12 @@ module.exports = JSON.parse('[[[0,44],"disallowed_STD3_valid"],[[45,46],"valid"]
 /******/ 	if (typeof __nccwpck_require__ !== 'undefined') __nccwpck_require__.ab = __dirname + "/";
 /******/ 	
 /************************************************************************/
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
-(() => {
-"use strict";
-var exports = __webpack_exports__;
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-const run_1 = __nccwpck_require__(7764);
-(0, run_1.postRun)();
-
-})();
-
-module.exports = __webpack_exports__;
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
+/******/ 	var __webpack_exports__ = __nccwpck_require__(3886);
+/******/ 	module.exports = __webpack_exports__;
+/******/ 	
 /******/ })()
 ;
