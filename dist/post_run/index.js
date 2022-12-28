@@ -67799,7 +67799,6 @@ function postRun() {
         }
         catch (error) {
             core.error(`Failed to post-run: ${error}, ${error.stack}`);
-            core.setFailed(error.message);
         }
     });
 }

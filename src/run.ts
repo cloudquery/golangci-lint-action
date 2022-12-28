@@ -197,6 +197,5 @@ export async function postRun(): Promise<void> {
     await saveCache()
   } catch (error) {
     core.error(`Failed to post-run: ${error}, ${error.stack}`)
-    core.setFailed(error.message)
   }
 }
